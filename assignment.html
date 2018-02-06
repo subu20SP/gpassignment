@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<title>Assignment1</title>
+	 <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+	<style>
+	
+	.custom-nav{
+	 border:0px;
+	 -webkit-border-radius: 0px;
+	 -moz-border-radius: 0px;
+	 -ms-border-radius: 0px;
+	 -o-border-radius: 0px;
+	 border-radius: 0px;
+	 background-color: #FFF!important;
+	 -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	 box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	 
+	}
+	.logo img{
+	height:80px;
+	float:left;
+	margin-top:0px;
+	margin-bottom:0px;
+	padding: 0px 10px;
+	}
+	.custom-nav li a:hover{
+	border-bottom:3px solid yellow;
+	transition:all 0.5s ease-in;
+	padding:12px;
+	}
+
+	.banner-content{
+		position:absolute;
+		width:1140px;
+		top:35%;
+		left:50%;
+		transform:translate(-50%,-50%);
+	}
+	header{
+	 height: 70VH;
+	 background: url(https://res.cloudinary.com/hellofresh/image/upload/f_auto,fl_lossy,q_80/v1/hellofresh_website/us/cms/lentil/delicious/HF-homepage-2560x700-Tan.jpg); no-repeat center center fixed;
+	 background-color: rgba(0,0,0,0.03);
+	 background-blend-mode: overlay;
+	background-position:center;
+	background-size:cover;
+	}
+	.h-city-home-title {
+	text-align: center;
+	z-index: 1;
+	position: relative;
+	font-weight: 300!important;
+	text-rendering: optimizeLegibility;
+	font-size: 35px;
+	line-height: 1.3em;
+	padding: 10px 25px;
+	text-shadow: 1px 1px 0 rgba(0,0,0,.3);
+	color: black;
+	}
+	.logo-small {
+		color: #1ed878;
+		font-size: 50px;}
+
+	.card{
+	border: 1px solid green;
+	transform:scale(1.15);
+	transition:all 0.5s;
+	border-radius:5px;}
+
+	.card:hover{
+	transform:scale(1.15);
+	}
+
+	footer{
+	background-color: #97c452;
+	color:white;
+	margin-top: 30px;
+	padding:20px 0px;
+	}
+	a:link{
+	text-decoration:none;
+	}
+	a:visited{
+	text-decoration:none;}
+
+
+	</style>
+	
+		
+<!--Navbar-->
+	<nav class="navbar navbar-light navbar-fixed-top bg-light custom-nav">
+  
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>                        
+		  </button>
+		  <a class="navbar-brand logo"><img src="imageedit_3_4385555095.gif"></a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+		  <ul class="nav navbar-nav">
+			<li class="active"><a href="assignment.html"><span style="color:black; font-size:20px">Home</span></a></li>
+			<li><a href="Add_Restaurant.html"><span style="color:black; font-size:20px">Add your Restaurant</span></a></li>
+		  </ul>
+                                                                                                                    </div>
+		</div>
+	 </div>
+	</nav>
+<!-- Navbar Ends-->
+	<header>    <!--header-->
+	 <div class="banner-content">
+			<h1 class="h-city-home-title" style="color:#5c5c3d"><b>
+           Find the best restaurants, cafés<br> for fresh food in Jaipur<b></h1>
+			<form class="form-inline my-2 my-lg-0" style="padding:0px 370px;">
+			<input class="form-control mr-sm-2" size="25" type="search" placeholder="Search for restaurants.." aria-label="Search">
+			<button onclick="myfunction()"class="btn btn-outline-success my-2 my-sm-0" type="submit" style="background-color: #009900"><b>Search</b></button>
+			</form>
+	  </div>
+	</header><!-- header ends-->
+<!--Images and link of restaurants-->
+		<div class="container-fluid bg-3" style="margin-top:30px; margin-bottom:30px;">    
+		  <h3 style="font-size:30px;"><b>Restaurants in Jaipur - 100%Vegan</b></h3><br>
+		  <div class="row">
+			<div class="col-sm-3">
+			  <a href="kebabs.html" target="_blank"><img src="kebabs3.jpg" class="img-responsive" style="width:100%; height:220px; border:2px solid #ddd; 
+		border-radius: 4px; padding: 5px;" alt="Image">
+			  <p style="text-center;margin-top:12px;"><strong>Kebabs and Curry</strong><br>Gold Souk Building, Malviya Nagar, Jaipur</p></a>
+			</div>
+			<div class="col-sm-3"> 
+			  <a href="mamus.html" target="_blank"><img src="mamus3.jpg" class="img-responsive" style="width:100%; height:220px;border:2px solid #ddd; 
+		border-radius: 4px; padding: 5px;" alt="Image">
+			  <p style="text-center;margin-top:12px;"><strong>Mamu's Infusion</strong><br>Mangalam Ambition Tower, Subhash Marg, C Scheme, Jaipur</p></a>
+			</div>
+			<div class="col-sm-3"> 
+			  <a href="blackout.html" target="_blank"><img src="blackout.jpg" class="img-responsive" style="width:100%; height:220px;border:2px solid #ddd; 
+		border-radius: 4px; padding: 5px;" alt="Image">
+			  <p style="text-center;margin-top:12px;"><strong>Blackout</strong><br>Golden Oak Hotel, Ahinsa Circle, C Scheme, Jaipur</p></a>
+			</div>
+			<div class="col-sm-3">
+			  <a href="forresta.html" target="_blank"><img src="forresta2.jpg" class="img-responsive" style="width:100%; height:220px;border:2px solid #ddd; 
+		border-radius:4px; padding:5px;" alt="Image">
+			  <p style="text-center;margin-top:12px;"><strong>The Forresta Kitchen & Bar</strong><br>Devrajniwas, Near Moti Mahal Cinema, Bani Park, Jaipur</p></a>
+			</div>
+	  </div>
+	</div><br><!--Images and links ends-->
+	
+ <footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6" style="text-align:center">
+                <p>Copyright &copy;2018</p>
+            </div>
+            <div class="col-md-6" style="text-align:right; color:white;" >
+                <div class="pull-right" >
+                    <a href="#"><i class="fa fa-linkedin-square fa-icon"></i></a>
+                    <a href="#"><i class="fa fa-twitter-square fa-icon"></i></a>
+                    <a href="#"><i class="fa fa-skype fa-icon"></i></a>
+                    <a href="#"><i class="fa fa-facebook-square fa-icon"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+ </footer>
+  <script>	
+  
+	function myFunction() {
+	alert("This search is only for demo purpose");
+	}
+	</script>
+
+
+</body>
+</html>
